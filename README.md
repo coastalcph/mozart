@@ -2,27 +2,26 @@
 MozArt: a multilingual dataset of parallel cloze examples with annotator demographics.
 
 
-
 The data is provided in individual JSONL files per language {lang}_data_with_annotations.jsonl, where {lang} denotes the ISO 639-1 code of each language (en, es, de, fr). Each line of the JSONL corresponds to one sentence completed by one annotator with the following information:
 
 <pre>
-<b>s_id</b>: str,  
-<b>text</b>: str,  
-<b>true_mask</b>: str,  
-<b>tag</b>: str,  
-<b>mask</b>: str,  
-<b>u_id</b>: str,  
-<b>native</b>: int,   
-<b>nonnative</b>: int,  
-<b>male</b>: int,  
-<b>female</b>: int,   
-<b>age</b>: int,  
-<b>country_of_birth</b>: str,  
-<b>current_country_of_residence</b>: str,  
-<b>first_language</b>: str,  
-<b>fluent_languages</b>: List[str],  
-<b>nationality</b>: str,  
-<b>time_taken</b>: float  
+<b>s_id</b>: str,  				sentence indentifier
+<b>text</b>: str,  				sentence text
+<b>true_mask</b>: str,  			word masked in the sentence
+<b>tag</b>: str,  				part-of-speech of the word masked
+<b>mask</b>: str,  				word given by the annotator to fill in the gap
+<b>u_id</b>: str,  				annotator identifier 
+<b>native</b>: int,   				binary variable; 1: the annotator is a native speaker of the target language, 0: otherwise
+<b>nonnative</b>: int,  			binary variable; 1: the annotator isn't a native speaker of the target language, 0: otherwise
+<b>male</b>: int,  				binary variable; 1: the annotator is a male (self-reported), 0: otherwise
+<b>female</b>: int,   				binary variable; 1: the annotator is a female (self-reported), 0: otherwise
+<b>age</b>: int,  				annotator's age at the time of completion
+<b>country_of_birth</b>: str,  		annotator's country of birth
+<b>current_country_of_residence</b>: str,	annotator's current country of residence at the time of completion
+<b>first_language</b>: str,  			annotator's first language
+<b>fluent_languages</b>: List[str],  		list of languages that the annotator has reported to be fluent in
+<b>nationality</b>: str,  			annotator's nationality
+<b>time_taken</b>: float  			time taken to complete the task (ms)
 </pre>
 
 Note that the attributes that were not provided voluntarily are filled with 'null'.
@@ -31,8 +30,12 @@ This work is licensed under the Creative Commons Attribution 4.0 International L
 
 If you use our dataset, please cite:
 ```
-Are Pretrained Multilingual Models Equally Fair Across Languages? (to appear in COLING 2022)
-Authors: Laura Cabello Piqueras, Anders Søgaard
+@inproceedings{cabello2022pretrained,
+  title={Are Pretrained Multilingual Models Equally Fair Across Languages?},
+  author={Cabello Piqueras, Laura and S{\o}gaard, Anders},
+  booktitle={COLING 2022},
+  year={2022}
+}
 ```
 
 Main resources: 
