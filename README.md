@@ -28,13 +28,16 @@ Note that the attributes that were not provided voluntarily are filled with 'nul
 
 This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/ 
 
-If you use our dataset, please cite:
+If you use our dataset, please cite our [paper](https://arxiv.org/abs/2210.05457):
 ```
-@inproceedings{cabello2022pretrained,
-  title={Are Pretrained Multilingual Models Equally Fair Across Languages?},
-  author={Cabello Piqueras, Laura and S{\o}gaard, Anders},
-  booktitle={COLING 2022},
-  year={2022}
+@misc{cabello2022pretrained,
+  doi = {10.48550/ARXIV.2210.05457},
+  url = {https://arxiv.org/abs/2210.05457},
+  author = {Piqueras, Laura Cabello and Søgaard, Anders},
+  title = {Are Pretrained Multilingual Models Equally Fair Across Languages?},
+  publisher = {arXiv},
+  year = {2022},
+  copyright = {arXiv.org perpetual, non-exclusive license}
 }
 ```
 
