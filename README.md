@@ -30,14 +30,18 @@ This work is licensed under the Creative Commons Attribution 4.0 International L
 
 If you use our dataset, please cite our [paper](https://arxiv.org/abs/2210.05457) (COLING 2022):
 ```
-@misc{cabello2022pretrained,
-  doi = {10.48550/ARXIV.2210.05457},
-  url = {https://arxiv.org/abs/2210.05457},
-  author = {Piqueras, Laura Cabello and Søgaard, Anders},
-  title = {Are Pretrained Multilingual Models Equally Fair Across Languages?},
-  publisher = {arXiv},
-  year = {2022},
-  copyright = {arXiv.org perpetual, non-exclusive license}
+@inproceedings{cabello-piqueras-sogaard-2022-pretrained,
+    title = "Are Pretrained Multilingual Models Equally Fair across Languages?",
+    author = "Cabello Piqueras, Laura  and
+      S{\o}gaard, Anders",
+    booktitle = "Proceedings of the 29th International Conference on Computational Linguistics",
+    month = oct,
+    year = "2022",
+    address = "Gyeongju, Republic of Korea",
+    publisher = "International Committee on Computational Linguistics",
+    url = "https://aclanthology.org/2022.coling-1.318",
+    pages = "3597--3605",
+    abstract = "Pretrained multilingual language models can help bridge the digital language divide, enabling high-quality NLP models for lower-resourced languages. Studies of multilingual models have so far focused on performance, consistency, and cross-lingual generalisation. However, with their wide-spread application in the wild and downstream societal impact, it is important to put multilingual models under the same scrutiny as monolingual models. This work investigates the group fairness of multilingual models, asking whether these models are equally fair across languages. To this end, we create a new four-way multilingual dataset of parallel cloze test examples (MozArt), equipped with demographic information (balanced with regard to gender and native tongue) about the test participants. We evaluate three multilingual models on MozArt {--}mBERT, XLM-R, and mT5{--} and show that across the four target languages, the three models exhibit different levels of group disparity, e.g., exhibiting near-equal risk for Spanish, but high levels of disparity for German.",
 }
 ```
 
